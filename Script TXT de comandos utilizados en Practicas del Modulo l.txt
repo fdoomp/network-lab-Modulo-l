@@ -1,0 +1,109 @@
+Comandos usados practica 1
+
+sudo apt update
+
+sudo apt upgrade -y
+
+
+============================================
+
+Comandos usados practica 2
+
+ifconfig
+
+sudo ip addr del ipqueesta dev ens33
+
+sudo ifconfig ens33
+
+sudo dhclient ens33
+
+sudo ifconfig ens33 down
+
+sudo dhclient ens33
+
+sudo ifconfig ens33 192.168.50.10/24
+
+sudo ip addr add 192.168.20.10/24 dev ens33
+
+nmcli connection show
+
+sudo nmcli connection modify ¨Wired connection 1¨ ipv4.method manual ipv4.addresses 192.169.3.30/24 ipv4.gateway 192.168.3.1
+
+sudo nano /etc/resolv.conf 
+
+
+========================================================================================
+
+Comandos usados practica 3
+
+sudo adduser fernando2332
+
+sudo useradd -s /bin/bash fernando2332
+
+cd
+
+cd home 
+
+ls 
+
+sudo usermod -aG sudo fernando2332
+
+su fernando2332
+
+sudo groupadd guest
+
+sudo adduser perencejo
+
+sudo useradd -s /bin/bash perencejo
+
+sudo usermod -aG guest perencejo
+
+sudo userdel -r perencejo
+
+sudo groupdel guest 
+
+sudo groupdel guest 
+
+sudo rm -r /home/Fernando
+
+sudo rm -r /home/perencejo
+
+
+===========================================================================================
+
+
+Comandos usados practica 4
+
+mkdir materia
+
+cd materia
+
+vi estudiante.txt
+
+cat estudiante.txt
+
+chmod 700 estudiante.txt
+
+ls -l
+
+chmod 070 estudiante.txt
+
+cd
+
+mkdir materia2
+
+cd materia2
+
+sudo su
+
+cp materia/estudiante.txt materia2/estudiante.txtx
+
+ls
+
+exit
+
+rm -r materia
+
+rm -r estudiante.txt
+
+============================================
